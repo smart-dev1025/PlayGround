@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PlayGround</title>
+    </head>
+    <body>
+        <h1>PlayGrounds List</h1>
+        <div class="playgrounds">
+            {% for item in playgrounds %}
+            <div class="playground">
+                <p>
+                    {{item.title}}
+                </p>
+                <p>
+                    {{item.snipet}}
+                </p>
+            </div>
+            {% endfor%}
+        </div>
+    </body>
+</html>
